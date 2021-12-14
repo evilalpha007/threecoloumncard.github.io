@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+
+body {
+display: flex ;
+justify-content:center ;
+align-items: center;
+width: 100%;
+height: 100vh;
+background-color:  hsl(0, 0%, 95%);
+color: rgb(255, 255, 255);
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+.main_container{
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius:50px;
+}
+
+
+
+p{
+font-size:15px;
+
+}
+
+
+.a_1,.a_2,.a_3{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+}
+
+/* **************************************************************** */
+.a_1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+
+.a_3{
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+
+
+
+.a_1,.a_2,.a_3{
+    padding: 35px;
+    font-size:25px;
+    background: hsl(31, 77%, 52%);
+
+}
+.a_2{
+    background:hsl(184, 100%, 22%);
+}
+
+.a_3{
+    background:  hsl(180deg 89% 18%);
+
+
+}
+
+.a_4{
+    background:hsl(179, 100%, 13%);
+}
+
+.a_12{
+    text-transform: uppercase;
+
+}
+
+
+.a_14{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/* ***********************  button part bro start***************************************** */
+
+button{
+    text-transform: capitalize;
+padding:10px;
+border-radius:50px ;
+border: none;
+}
+
+.a_1 button{
+
+    color:   hsl(31, 77%, 52%);
+    }
+
+.a_2 button{
+
+    color: hsl(184, 100%, 22%);
+    }
+
+
+.a_3 button{
+
+    color:  hsl(180deg 89% 18%);;
+    }
+
+
+/* ***********************  button part bro end***************************************** */
+
+/* ***********************  media query part bro start***************************************** */
+
+@media only screen and (max-width: 400px) {
+
+.main_container{
+height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-bottom: 50px;
+    padding-top: 200px;
+}
+
+
+.a_1, .a_2, .a_3 {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    padding: 30px;
+
+}
+.a_11,.a_12,.a_13{
+    margin-bottom: 10px;
+}
+button{
+    margin-top: 10px;
+}
+
+.a_1{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+
+}
+
+
+.a_3{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+
+}
+
+
+
+/* ***********************  media query part bro end***************************************** */
